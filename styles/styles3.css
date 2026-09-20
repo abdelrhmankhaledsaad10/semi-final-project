@@ -1,0 +1,414 @@
+/* --- GLOBAL STYLES & VARIABLES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: #2c343e;
+    --teal: #0e8784;
+    --pale-orange: #fdd6ba;
+    --gray-text: #83888f;
+    --bg-color: #fefcf7;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+}
+
+header {
+    padding: 40px 140px 40px 85px;
+}
+
+/* --- NAVBAR FIXED STYLING --- */
+.navbar {
+    width: 1200px;
+    max-width: 90%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 24px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--gray-text);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.links a.active,
+.links a:hover {
+    color: var(--dark-blue);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- PLAN HERO SECTION --- */
+.plan-hero {
+    width: 1200px;
+    max-width: 90%;
+    min-height: 450px;
+    margin: 40px auto 0 auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../imags/Subscribe\ Image.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 60px 85px;
+    color: white;
+}
+
+.plan-hero-text {
+    max-width: 500px;
+}
+
+.plan-hero-text h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.plan-hero-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* --- STEPS SECTION (DARK BOX) --- */
+.plan-steps-section {
+    background-color: var(--dark-blue);
+    width: 1200px;
+    max-width: 90%;
+    margin: 80px auto;
+    border-radius: 12px;
+    padding: 80px;
+    color: white;
+}
+
+.plan-steps-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.plan-step-card h2 {
+    color: var(--pale-orange);
+    font-family: Georgia, serif;
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.plan-step-card h3 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.plan-step-card p {
+    color: var(--gray-text);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* --- ORDER BUILDER SECTION --- */
+.order-section {
+    margin-bottom: 140px;
+}
+
+.order-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 120px;
+    align-items: start;
+}
+
+.order-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-left: 2px solid #e2dedb;
+}
+
+.order-link {
+    text-decoration: none;
+    color: var(--gray-text);
+    font-weight: 700;
+    font-size: 18px;
+    font-family: Georgia, serif;
+    padding-left: 24px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.order-link span {
+    margin-right: 10px;
+}
+
+.order-link.active,
+.order-link:hover {
+    color: var(--dark-blue);
+}
+
+.order-link.active::before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: var(--teal);
+}
+
+/* Question Content Cards */
+.question-block {
+    margin-bottom: 60px;
+}
+
+.question-block h3 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: var(--gray-text);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-block h3 i {
+    color: var(--teal);
+    font-size: 20px;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.option-card {
+    background-color: #f4f1ea;
+    border-radius: 10px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.option-card:hover {
+    border-color: var(--teal);
+}
+
+.option-card.selected {
+    background-color: var(--teal);
+    color: white;
+}
+
+.option-card h4 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.option-card p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.option-card.selected p {
+    color: white;
+}
+
+/* Summary Box */
+.order-summary-box {
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    padding: 40px 50px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.order-summary-box span {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--gray-text);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.order-summary-box p {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.order-summary-box strong {
+    color: var(--teal);
+}
+
+.order-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-create {
+    background-color: var(--teal);
+    color: white;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-create:hover {
+    background-color: #0b6b68;
+}
+
+/* --- FOOTER STYLING --- */
+footer {
+    background-color: var(--dark-blue);
+    height: 120px;
+    max-width: 1280px;
+    margin: 0 auto 40px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 80px;
+}
+
+.footer-logo img {
+    height: 24px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--gray-text);
+    letter-spacing: 1px;
+}
+
+.footer-nav a:hover {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.social-icons a:hover {
+    color: var(--pale-orange);
+}
+
+/* --- FULL RESPONSIVE DESIGN --- */
+
+@media (max-width: 1024px) {
+    header {
+        padding: 20px;
+    }
+
+    .plan-steps-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .plan-steps-section {
+        padding: 50px 30px;
+    }
+
+    .order-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .order-sidebar {
+        flex-direction: row;
+        border-left: none;
+        border-bottom: 2px solid #e2dedb;
+        padding-bottom: 20px;
+        overflow-x: auto;
+    }
+
+    .options-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .plan-hero {
+        min-height: 320px;
+        text-align: center;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+
+    .plan-hero-text h1 {
+        font-size: 36px;
+    }
+
+    footer {
+        height: auto;
+        padding: 50px 20px;
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

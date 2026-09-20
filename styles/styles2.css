@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: #2c343e;
+    --teal: #0e8784;
+    --pale-orange: #fdd6ba;
+    --gray-text: #83888f;
+    --bg-color: #fefcf7;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+}
+
+header {
+    padding: 40px 140px 85px 85px;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    width: 1270px;
+    max-width: 90%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 24px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--gray-text);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.links a.active,
+.links a:hover {
+    color: var(--dark-blue);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- ABOUT HERO SECTION --- */
+.about-hero {
+    width: 1200px;
+    max-width: 90%;
+    min-height: 450px;
+    margin: 40px auto;
+
+    /* Uses your exact image file name with quotes */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imags/About\ Image.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 60px 85px;
+    color: white;
+}
+
+.about-hero-text {
+    max-width: 500px;
+}
+
+.about-hero-text h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    margin-bottom: 24px;
+    color: white;
+}
+
+.about-hero-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* --- OUR COMMITMENT SECTION --- */
+.commitment-section {
+    padding: 120px 0;
+}
+
+.commitment-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.commitment-img img {
+    width: 100%;
+    max-width: 440px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.commitment-text h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    color: var(--dark-blue);
+    margin-bottom: 30px;
+}
+
+.commitment-text p {
+    color: var(--gray-text);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* --- UNCOMPROMISING QUALITY SECTION --- */
+.quality-section {
+    margin-bottom: 120px;
+}
+
+.quality-card {
+    background-color: var(--dark-blue);
+    border-radius: 12px;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.quality-text {
+    max-width: 540px;
+}
+
+.quality-text h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.quality-text p {
+    color: var(--gray-text);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.quality-img img {
+    width: 250px;
+    border-radius: 10px;
+    margin-top: -120px;
+    /* Pulls image upward to match the design card overlap */
+}
+
+/* --- OUR HEADQUARTERS SECTION --- */
+.headquarters-section {
+    margin-bottom: 140px;
+}
+
+.hq-title {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    color: var(--gray-text);
+    margin-bottom: 80px;
+}
+
+.hq-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.hq-card .hq-icon {
+    font-size: 40px;
+    color: var(--teal);
+    margin-bottom: 40px;
+}
+
+.hq-card h3 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+.hq-card p {
+    color: var(--gray-text);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* --- FOOTER STYLING --- */
+footer {
+    background-color: var(--dark-blue);
+    height: 120px;
+    max-width: 1280px;
+    margin: 0 auto 40px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 80px;
+}
+
+.footer-logo img {
+    height: 24px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--gray-text);
+    letter-spacing: 1px;
+}
+
+.footer-nav a:hover {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.social-icons a:hover {
+    color: var(--pale-orange);
+}
+
+/* --- RESPONSIVE DESIGN (TABLET & MOBILE) --- */
+
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 20px 40px 20px;
+    }
+
+    .about-hero {
+        padding: 0 40px;
+        min-height: 380px;
+    }
+
+    .commitment-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .quality-card {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 30px;
+        gap: 40px;
+    }
+
+    .quality-img img {
+        margin-top: 0;
+        width: 200px;
+    }
+
+    .hq-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        min-height: 320px;
+        text-align: center;
+        justify-content: center;
+        padding: 40px 20px;
+        /* Centers text nicely on mobile screens */
+    }
+
+    .about-hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hq-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hq-title {
+        text-align: center;
+    }
+
+    footer {
+        height: auto;
+        padding: 50px 20px;
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

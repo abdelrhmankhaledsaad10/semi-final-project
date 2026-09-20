@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Create Your Plan - Coffeeshop</title>
+    <link rel="stylesheet" href="../styles/styles3.css">
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../imags/Logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <nav>
+                <ul class="links">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./ABOUTUS.html">ABOUT US</a></li>
+                    <li><a href="./CREATION.html" class="active">Create your plan</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Plan Hero Section -->
+        <div class="plan-hero">
+            <div class="plan-hero-text">
+                <h1>Create plan</h1>
+                <p>Coffee roasters begin its journey of exotic discovery in 1999, highlighting stories of coffee from
+                    around the world. We have since been dedicated to bringing you the perfect cup — from bean to brew
+                    in every sip.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- How It Works Section (Steps) -->
+    <section class="plan-steps-section">
+        <div class="container plan-steps-container">
+            <div class="plan-step-card">
+                <h2>01</h2>
+                <h3>Pick your coffee</h3>
+                <p>Select from our evolving range of artisan coffees. Our beans are ethically sourced and roasted to
+                    order.</p>
+            </div>
+            <div class="plan-step-card">
+                <h2>02</h2>
+                <h3>Choose the frequency</h3>
+                <p>Customize your order frequency, quantity, and delivery style. Skip or cancel anytime with ease.</p>
+            </div>
+            <div class="plan-step-card">
+                <h2>03</h2>
+                <h3>Receive and enjoy!</h3>
+                <p>We ship your package within 48 hours of roasting. Freshly brewed coffee delivered right to your door.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Builder Section -->
+    <section class="order-section">
+        <div class="container order-grid">
+            <!-- Sidebar Navigation -->
+            <div class="order-sidebar">
+                <a href="#preference" class="order-link active"><span>01</span> Preferences</a>
+                <a href="#bean-type" class="order-link"><span>02</span> Bean Type</a>
+                <a href="#quantity" class="order-link"><span>03</span> Quantity</a>
+                <a href="#grind-option" class="order-link"><span>04</span> Grind Option</a>
+                <a href="#deliveries" class="order-link"><span>05</span> Deliveries</a>
+            </div>
+
+            <!-- Options Content Area -->
+            <div class="order-content">
+                <!-- Question 1 -->
+                <div class="question-block" id="preference">
+                    <h3>How do you drink your coffee? <i class="fa-solid fa-angle-up"></i></h3>
+                    <div class="options-grid">
+                        <div class="option-card">
+                            <h4>Capsule</h4>
+                            <p>Compatible with Nespresso systems and similar brewers.</p>
+                        </div>
+                        <div class="option-card selected">
+                            <h4>Filter</h4>
+                            <p>For pour over or drip methods like Aeropress, Drip, and Chemex.</p>
+                        </div>
+                        <div class="option-card">
+                            <h4>Espresso</h4>
+                            <p>Dense and finely ground beans for an intense, flavorful shot.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question-block" id="bean-type">
+                    <h3>What type of coffee? <i class="fa-solid fa-angle-down"></i></h3>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-block" id="quantity">
+                    <h3>How much would you like? <i class="fa-solid fa-angle-down"></i></h3>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-block" id="grind-option">
+                    <h3>Want us to grind them? <i class="fa-solid fa-angle-down"></i></h3>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question-block" id="deliveries">
+                    <h3>How often should we deliver? <i class="fa-solid fa-angle-down"></i></h3>
+                </div>
+
+                <!-- Summary Box -->
+                <div class="order-summary-box">
+                    <span>Order Summary</span>
+                    <p>"I drink my coffee using <strong>Filter</strong>, with a type of <strong>_____</strong>, sent to
+                        me <strong>_____</strong>."</p>
+                </div>
+
+                <div class="order-btn-wrapper">
+                    <button class="btn-create">Create your plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="../imags/Footer Logo.svg" alt="Footer-logo">
+            </div>
+            <nav class="footer-nav">
+                <a href="../index.html">Home</a>
+                <a href="./ABOUTUS.html">About Us</a>
+                <a href="./CREATION.html">Create Your Plan</a>
+            </nav>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
