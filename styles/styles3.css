@@ -379,6 +379,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+.links{
+    display: none;
+}
+
     .plan-hero {
         min-height: 320px;
         text-align: center;
